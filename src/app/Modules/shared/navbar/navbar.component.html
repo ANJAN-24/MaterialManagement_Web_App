@@ -1,0 +1,59 @@
+<mat-toolbar
+  class="mat-elevation-z7 mat-toolbar"
+  style="background-color: white"
+>
+  <button
+    mat-icon-button
+    class="example-icon"
+    style="outline-color: white"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a
+    class="navbar-brand p-0 mr-0"
+    asp-area=""
+    asp-controller="Home"
+    asp-action="Index"
+  >
+    <img
+      src=""
+      width="70%"
+      height="70%"
+      alt=""
+      id="logo"
+    />
+  </a>
+  <!-- <div class="ml-auto">
+    <div *ngIf="this.Auth.User!=null">
+      <app-profile-component
+      ></app-profile-component>
+    </div>
+    <div *ngIf="this.Auth.User==null" class="pt-1 pr-2">
+      <app-google-button></app-google-button>
+    </div>
+  </div> -->
+</mat-toolbar>
+
+<mat-sidenav-container
+  [hasBackdrop]="true"
+  style="height: 100%"
+  class="sidenav-container"
+>
+  <mat-sidenav mode="over" #sidenav >
+    <mat-selection-list [multiple]="false">
+      <mat-list-option style="text-align: center" >
+        MENU 1
+      </mat-list-option>
+      <mat-divider></mat-divider>
+      <mat-list-option   style="text-align: center"> Menu 2 </mat-list-option>
+      <mat-divider></mat-divider>
+      <mat-list-option  style="text-align: center" > Menu 3 </mat-list-option>
+      <mat-divider></mat-divider>
+    </mat-selection-list>
+  </mat-sidenav>
+  <mat-sidenav-content fixedInViewport="false">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
