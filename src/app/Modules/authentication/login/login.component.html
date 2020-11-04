@@ -1,0 +1,33 @@
+
+
+<div class="container mt-4 mx-auto" style="width:300px;margin:0 auto">
+    <div class="row ">
+    <div class =" card mt-50">
+        <div class="card-body">
+            <div class="row mx-auto w-100 text-center">
+                <!-- <mat-icon class="display-2"  >account_circle</mat-icon> -->
+                <span class="material-icons  mx-auto" style="font-size:80px;"  >
+                    person_pin
+                    </span>
+            </div>
+            <div class="row w-100 mx-auto">
+                <mat-form-field appearance="outline" class="col">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="">
+                    <mat-icon matSuffix >email</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="row w-100 mx-auto">
+                  <mat-form-field appearance="outline" class="col">
+                    <mat-label>password</mat-label>
+                    <input [type]="!showPassword?'password':'text' " matInput placeholder="Placeholder">
+                    <mat-icon matSuffix *ngIf="showPassword" (click)="showPassword=!showPassword" style="cursor: pointer;" >visibility</mat-icon>
+                    <mat-icon matSuffix *ngIf="!showPassword" (click)="showPassword=!showPassword"  style="cursor: pointer;" >visibility_off</mat-icon>
+                  </mat-form-field>
+                </div>
+                <button mat-raised-button *ngIf="!isLoading" class="w-100" color="primary" (click)="loginUser()" >Login</button>
+                <mat-spinner [diameter]="30" *ngIf="isLoading" class="mx-auto"></mat-spinner>
+    </div >
+    </div>
+    </div>
+    </div>
