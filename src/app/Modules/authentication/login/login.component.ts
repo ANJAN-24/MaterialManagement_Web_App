@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,12 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  // Variable Declaration start
+  showPassword:Boolean=false;
+  isLoading:Boolean=false;
+  userCredential=new FormGroup({
+    Email:new FormControl("",[Validators.required]),
+    Password:new FormControl("",[Validators.required])
+  }
+  )
+
+  // Variable Decleration Ends
   constructor() { }
-   showPassword:Boolean=false;
-   isLoading:Boolean=false;
+
   ngOnInit(): void {
   }
   loginUser():void{
 
   }
+
 }
