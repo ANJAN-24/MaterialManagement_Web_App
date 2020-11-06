@@ -36,6 +36,6 @@ import {MatTreeModule} from '@angular/material/tree';
     MatButtonModule,MatMenuModule,MatIconModule,MatExpansionModule,MatDialogModule,MatInputModule,MatSnackBarModule,MatDatepickerModule,MatNativeDateModule,MatSelectModule,MatProgressSpinnerModule,MatStepperModule,MatGridListModule,MatBadgeModule,MatListModule,MatDividerModule,MatRippleModule,MatToolbarModule,MatSidenavModule,MatTreeModule,MatSortModule
   ],
   exports:[MatSliderModule,MatCardModule,MatTableModule,MatFormFieldModule,MatPaginatorModule,MatButtonModule,MatMenuModule
-    ,MatIconModule,MatExpansionModule,MatDialogModule,MatInputModule,MatSnackBarModule,MatDatepickerModule,MatNativeDateModule,MatSelectModule,MatProgressSpinnerModule,MatStepperModule,MatSlideToggleModule,MatGridListModule,MatBadgeModule,MatListModule,MatDividerModule,MatRippleModule,MatToolbarModule,MatSidenavModule,MatTreeModule,MatSortModule]  
+    ,MatIconModule,MatExpansionModule,MatDialogModule,MatInputModule,MatSnackBarModule,MatDatepickerModule,MatNativeDateModule,MatSelectModule,MatProgressSpinnerModule,MatStepperModule,MatSlideToggleModule,MatGridListModule,MatBadgeModule,MatListModule,MatDividerModule,MatRippleModule,MatToolbarModule,MatSidenavModule,MatTreeModule,MatSortModule]
 })
 export class MaterialModule { }
